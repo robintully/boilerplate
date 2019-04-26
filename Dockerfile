@@ -23,7 +23,6 @@ COPY poetry.lock pyproject.toml /poetry/
 RUN poetry install --no-interaction --no-ansi
 
 # Creating folders, and files for a project:
-WORKDIR /boilerplate
 COPY boilerplate .
 COPY zappa_settings.json .
 
